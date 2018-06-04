@@ -1,0 +1,51 @@
+html {
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+
+/* body {
+    width: 400px;
+    height: 800px;
+} */
+
+.body-bkgrd {
+    background-color: darkmagenta;
+}
+
+.reg-ex {
+    background-color: white;
+    color: rgb(70, 2, 70);
+    /* font-weight: bold; */
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    height: 400px;
+    font-size: 18px;
+    width: 100%;
+}
+
+table {
+    background-color: #fff;
+}
+
+.row {
+    padding: 2px;
+}
+
+label {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+.btn {
+    background-color: yellowgreen;
+    font-weight: bold;
+}

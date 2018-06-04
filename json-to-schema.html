@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JSON TO SCHEMA TOOL</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="json-to-schema.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+
+</head>
+
+<body class="body-bkgrd">
+    <div class="row">
+        <div class="col-md-6">
+            <label for="src"><h1>Your Source JSON</h1></label>
+            <textarea type="text" id="src">
+    Copy and paste your json response here to generate a valid schema for your data
+    </textarea>
+            <button id="process" onclick="process()" class="btn btn-primary">Process</button>
+        </div>
+        <div class="col-md-6">
+            <label for="tgt"><h1>Your Generated Schema</h1></label>
+            <textarea type="text" id="tgt"></textarea>
+        </div>
+    </div>
+    <div class="reg-ex">
+        <h1>Reg Ex Samples</h1>
+        <table class="table ">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Reg Ex</th>
+                    <th>Example(s)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mongo Object Id</td>
+                    <td>^[a-zA-Z0-9]{24}$</td>
+                    <td>5408571b52187a22502b321f</td>
+                </tr>
+                <tr>
+                    <td>UUID/GUID</td>
+                    <td>^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$</td>
+                    <td>37bab297-5ca2-4f71-a949-c9beba57eb8a</td>
+                </tr>
+                <tr>
+                    <td>Currency</td>
+                    <td>^[A-Z]{3}$</td>
+                    <td>USD</td>
+                </tr>
+                <tr>
+                    <td>Integer (Signed)</td>
+                    <td>^-?\d+$</td>
+                    <td>-45, 1, 123</td>
+                </tr>
+                <tr>
+                    <td>Integer (Unsigned)</td>
+                    <td>^\d+$</td>
+                    <td>1, 123</td>
+                </tr>
+                <tr>
+                    <td>Decimal (Signed)</td>
+                    <td>^-?\d+(\.\d+)?$</td>
+                    <td>-45.23, 1, 123.5</td>
+                </tr>
+                <tr>
+                    <td>Decimal (Unsigned)</td>
+                    <td>^\d+(\.\d+)?$</td>
+                    <td>1, 123.5</td>
+                </tr>
+                <tr>
+                    <td>Flight Number</td>
+                    <td>^[A-Z]{2,3}\d+{3,4}$</td>
+                    <td>AB123, ABC1234</td>
+                </tr>
+                <tr>
+                    <td>IATA Code</td>
+                    <td>^[A-Z]{3}$</td>
+                    <td>LHR, MAN</td>
+                </tr>
+                <tr>
+                    <td>Date (YYYY-MM-DD)</td>
+                    <td>^\d{4}-\d{2}-\d{2}$</td>
+                    <td>2014-01-16</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="json-to-schema.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

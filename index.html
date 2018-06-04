@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>heaven devtool Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="code.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scss.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.js"></script>
+
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <aside class="side-nav" id="show-side-navigation1">
+        <i class="fa fa-bars close-aside hidden-sm hidden-md hidden-lg" data-close="show-side-navigation1"></i>
+        <div class="heading">
+
+            <div class="info">
+                <h3 class="title-name">
+                </h3>
+            </div>
+        </div>
+
+        <!--INTERNAL SITE SEARCH-->
+       
+        <!-- <script type="text/javascript">
+
+            // Google Internal Site Search script II- By JavaScriptKit.com (http://www.javascriptkit.com)
+            // For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+            // This notice must stay intact for use
+            
+            function Gsitesearch(curobj){
+            var domainroot=curobj.domainroot[curobj.domainroot.selectedIndex].value
+            curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+            }
+            
+            </script> -->
+            
+            
+            <!-- <form action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)"> -->
+            
+                <!-- <div class="other">
+                        <p> -->
+                            <!-- <input name="q" type="hidden" />
+                            <input name="qfront" type="text" style="width: 180px" /> <input type="submit" value="Search" /><br />
+                            <i class="fa fa-search"></i>  -->
+                            <!-- <select name="domainroot">
+                            <option value="https://www.BCRef.netlify.com" selected="1">Other Helpful Sites to Search</option>
+                            <option value="https://www.stackoverflow.com">StackOverflow</option>
+                            <option value="https://www.mozilla.dev.tech.css">Mozilla Dev Network (CSS)</option>
+                            <option value="https://www.mozilla.dev.tech.dom">Mozilla Dev Network (DOM)</option>
+                            <option value="https://www.mozilla.dev.tech.html">Mozilla Dev Network (HTML)</option>
+                            <option value="https://www.webdeveloper.com/forum/">WebDeveloper Forum</option>
+                            </select>
+                            </p>
+                            </div> -->
+            
+            <!-- </form> -->
+            
+            
+
+
+        <ul class="categories">
+            <h3> Reference Links</h3>
+
+
+            <li>
+                <i class="fa fa-support fa-fw"></i>
+                <a href="https://css-tricks.com/almanac/"> CSS</a>
+            </li>
+            <li>
+                <i class="fa fa-envelope fa-fw"></i>
+                <a href="https://reactcheatsheet.com/"> React</a>
+
+            </li>
+
+            <li>
+                <i class="fa fa-bolt fa-fw"></i>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Methods_Index"> Javascript</a>
+            </li>
+            <li>
+                <i class="fa fa-home fa-fw"></i>
+                <a href ="https://developer.mozilla.org/en-US/docs/Web/API">Web APIs</a>
+            </li>
+            <li>
+                <i class="fa fa-support fa-fw"></i>
+                <a href="https://kapeli.com/cheat_sheets/Axios.docset/Contents/Resources/Documents/index"> Axios</a>
+            </li>
+
+            <li>
+                <i class="fa fa-bolt fa-fw"></i>
+                <a href="https://devarchy.com/react">Huge List of React Libraries</a>
+            </li>
+        </ul>
+        
+        <h3>Tools</h3>
+        <ul class="tools">
+            <li>
+                <i class="fa fa-bolt fa-fw"></i>
+                <a href="http://www.cssportal.com/scss-to-css/">SCSS to CSS Convertor</a>
+            </li>
+            <br>
+            <li>
+                <i class="fa fa-home fa-fw" aria-hidden="true"></i>
+                <a href="json-to-schema.html">Json to Schema Generator</a>
+            </li>
+            <br>
+            <li>
+                <i class="fa fa-users fa-fw"></i>
+                <a href="http://htmlcheatsheet.com/css/"> Interactive Web Design Tool</a>
+            </li>
+            <br>
+            <li>
+                <i class="fa fa-bolt fa-fw"></i>
+                <a href="https://www.sassmeister.com/">SASS Playground</a>
+            </li>
+            <br>
+            <li>
+                <i class="fa fa-users fa-fw"></i>
+                <a href="https://regexr.com/"> RegEx Tester</a>
+            </li>
+            <br>
+        </ul>
+
+    </aside>
+    <section id=" contents ">
+        <nav class="navbar navbar-default ">
+            <div class="container-fluid ">
+                
+                <div class="navbar-header ">
+                    
+                    <button type="button " class="navbar-toggle collapsed " data-toggle="collapse " data-target="#bs-example-navbar-collapse-1 "
+                        aria-expanded="false ">
+                        <i class="fa fa-align-right "></i>
+                    </button>
+                    <a class="navbar-brand " href="# ">
+                        <span class="main-color ">
+                            
+                        </span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right " id="bs-example-navbar-collapse-1 ">
+
+                </div>
+            </div>
+        </nav>
+        <div class="welcome ">
+            <div class="container-fluid ">
+                <div class="row ">
+                    <div class="col-md-12 ">
+                        <div class="content ">
+                            <h1 id="heaven">Heavens Reference DashBoard</h1>
+                            <h4> Feel free to contribute to repo. Ive included a template of a snippet commented out at the very
+                                bottom of the code. thanks</h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="statistics ">
+            <div class="container-fluid ">
+                <div class="row ">
+                    <div class="col-md-12 ">
+                        <div class="box ">
+                            <div class="info ">
+                                <h1>Code Snippets</h1>
+                                <div class="list">
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Convert Arguements into Arrays</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+ var args = Array.prototype.slice.call(arguements);
+                                                                                            </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Random Password Generator</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+    function randomPassword(str){
+      var charSet = "abcdefghijklmnopqrstuvwxyz1234567890";
+    for ( var i =0; i < charSet.length; i++){
+      var random = Math.random().toString(36).slice(2);
+    }
+        return random
+    }
+    
+    **USES BASE 36 STRING
+                                                                                            </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Factorlize a number</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">          
+    function factorialize(num) { 
+     var total = 1;{
+    for (var  i= 1; i &lt;= num; i++){
+        total *= i; 
+    }
+    }
+      return total;
+    }
+    
+    factorialize(5);
+                                                                                              </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Reverse a string</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+     function reverseString(str) {
+      var answer = str.split('').reverse().join('');
+        return answer;
+     }
+                                            
+    *SEXY WAY: 
+    return str.split('').reverse().join ('');
+                                                                                                
+                                                                                                
+                                                                                              </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Check for palindromes</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+                                                                                             
+        function palindrome(str) {
+         str= str.toLowerCase();
+        var symbols= /\W+|_/g;
+         str = str.replace(symbols,"");
+        var newString = str.split("")
+        .reverse().join("");
+          if ( newString === str){
+            return true;
+         } else{
+            return false;
+        }
+        }
+                                                                                           </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Find the longest word in a string</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+                                                                                        
+                                            
+         function findLongestWord(str) {
+            var splitString = str.split(" ");
+            var biggestWord = 0;
+         for(var i =0; i &lt; splitString.length; i++){
+            if (biggestWord &lt; splitString[i].length){
+        biggestWord = splitString[i].length;
+        }
+        }
+        return biggestWord;
+        }
+                                             
+                                                                                        </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Title case a sentence</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+                                                                                              
+ function titleCase(str){
+    var words = str.toLowerCase().split(" ");
+for ( var i= 0; i&lt; words.length;i++){
+    var letters = words[i].split("");{
+letters[0] = letters[0].toUpperCase();
+ words[i]= letters.join("");
+}
+}
+     return words.join(" ");
+}
+                                              
+                                              
+                                             
+                                                                                              </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Find the largest numbers in an array</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+                        function largestOfFour(arr){ 
+                        var results = [];
+                        for(var n in arr){
+                        var largestNumber = 0;
+                        for(var sb in arr[n]){
+                          if(arr[n][sb] &gt; largestNumber){
+                        largestNumber = arr[n][sb];
+                        }
+                        }    
+                           results[n]= largestNumber;
+                        }
+                           return results;
+                        }
+                                                                                              
+                                                                                              </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Validate an IP Address</span>
+                                                <span class="lang">[JS/REGEX]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+                                                                                              teh codez
+                                                                                              </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Confirm an ending</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+                     function confirmEnding(str, target) {
+                        return str.substr(-target.length)===target;
+                     }
+                        confirmEnding("Bastian", "n");
+                                                                                              </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Trunacate a string</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+                                                                                              
+                     function truncateString(str, num) {
+                      if( str.length &gt; num &amp;&amp; num &gt; 3){
+                        return str.slice(0, (num - 3)) + '...';
+                    }else if ( str.length &gt; num &amp;&amp; num &lt; 3){
+                        return str.slice(0,num) +'...';
+                    }else{
+                        return str;
+                    }
+                    }
+                                              
+                                                                                              </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Repeat a String X number of times</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+                    function repeatStringNumTimes(str, num) {
+                        if ( num &lt;0){
+                            str="";
+                        return str;
+                     } else {
+                    var strTimes = str.repeat(num);
+                        return strTimes;
+                     }
+                     }
+                     repeatStringNumTimes("abc", 3);
+                                                                                              </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">How many</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+                         function slasher(arr, howMany) {
+                            var newArray =arr.splice(howMany);
+                            return newArray;
+                         }
+                                                                                      
+                                                                                              </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Is it a boolean</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+                         function bouncer(arr) {
+                         return arr.filter(Boolean);
+                        }                                  
+                                                                                              </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Sort array smallest to largest</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+                                                                                              
+                            function getIndexToIns(arr, num) {
+                             arr.push(num);
+                                arr.sort(function(a,b) {
+                                return a-b;
+                             });
+                                return arr.indexOf(num);
+                             }
+                                                                                              </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Caesars Cipher</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+                         function rot13(str) { //SERR PBQR PNZC
+                            var rotCharArray = [];
+                            var regEx = /[A-Z]/ ;
+                            str = str.split("");
+                         for (var x in str) {
+                            if (regEx.test(str[x])) {
+                         rotCharArray.push((str[x]
+                         .charCodeAt() - 65 + 13) % 26 + 65);
+                         } else {
+                         rotCharArray.push(str[x].charCodeAt());
+                        }
+                        }
+                        str = String.fromCharCode.apply(String, rotCharArray);
+                            return str;
+                        }
+                                                                                 </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Add two numbers</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+                    var sum = 10 + 10;
+                                                                                              </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Increment a number</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+                    var myVar = 87; 
+                    myVar++;
+                                                                                              </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Access Multidimensional arrays with index</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+                    // Setup
+                    var myArray = [[1,2,3], [4,5,6], [7,8,9],[[10,11,12], 13, 14]];
+                     var myData = myArray[2][1]
+                                                                                              </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Modify an array with index</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+var ourArray = [1,2,3];
+ourArray[1] = 3; // ourArray now equals [1,3,3].
+                                                                                      </code></pre>
+                                        </details>
+                                    </div>
+
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Random integer between two numbers</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="code js answer">
+function randomIntFromInterval(min,max){
+return Math.floor(Math.random()*(max-min+1)+min);
+}
+                                                        </code></pre>
+                                        </details>
+                                    </div>
+
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Add your site to users bookmarks</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+function bookmark(address, sitename){
+    if(sidebar){
+     .sidebar.addPanel(sitename,address, '');
+ } else if (document.all){
+    .external.AddFavorite(address,sitename);
+ } else if(.opera && .print){
+     return true;
+}
+}
+                                                  </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Sort array of numbers to find where in the array an arg goes.</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+    function getIndexTo(arr, num) {
+      arr.sort(function(a,b){
+        return a-b ;
+    });
+    for (var a = 0; a < arr.length; a++){
+     if (arr[a] > num){
+        return a;
+     }
+        return arr.length
+     }
+    }
+                                                  </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Remove Duplicate letters from string</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+            var removeDuplicates(str){
+            var output = {
+                noDupes:"",
+                extras:""
+                }
+               var output :{
+            for(var i = 0; i < str.length; i++){
+             if(str.indexOf(str[i] === i)){
+                output,noDupes += str[i];
+            }else{
+                 output.extras += str[i];
+            }                                                  
+            }
+                 return output;
+            }
+            }
+        
+            SEXY WAY:
+            let arr_without_duplicates
+            = Array.from(new Set(arr));
+                                                  </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Get URL parameter</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="code answer">
+var getURLParameter = function(name) {
+return decodeURIComponent((new RegExp('[?|&amp;] ' + name + '=' + ' ([^&amp;;]+?)
+(&amp;|#|;|$) ').exec(location.search)||[,""])[1]
+.replace(/\+/g, '%20 '))||null;};
+var urlVar = getURLParameter("varname");
+                                                </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Load DOM without Script</span>
+                                                <span class="lang">[JS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+js.http.get(files[0],loader.js, {}, function(data){
+ eval(data);
+ if(files.length >1){
+load(files.slice(1));
+}
+});
+        </code>
+        </pre>
+                                        </details>
+                                    </div>
+                                    <!--CSS-->
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Gradients</span>
+                                                <span class="lang">[CSS]</span>
+                                            </summary>
+                                            <pre><code class="code css answer">
+ /*linear*/
+background: linear-gradient(red, blue);
+background: linear-gradient(90deg, red, blue);
+background: linear-gradient(90deg, red 0%, blue 50%, yellow 100%);
+ /*radial*/
+background: radial-gradient(red, blue);
+background: radial-gradient(circle closest-side, red, blue);
+background: radial-gradient(ellipse at top right, red 0%, blue 50%, yellow 100%);
+/*repeating*/
+background: repeating-linear-gradient(45deg, red, red 10px, blue 10px, blue 20px);
+background: repeating-radial-gradient(circle at 0 0, red, blue 50px);
+                                                    </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Get video to fill screen at all screen sizes</span>
+                                                <span class="lang">[CSS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+         .video{
+         position:relative;
+         padding-bottom:56.25%;
+         height:0;
+         overflow:hidden;
+         }
+         .videoFrame,
+         .videoObj,
+         .videoEmbed{
+         position:absolute;
+         top:0;
+         left:0;
+         width:100%;
+         height:100%
+         }
+                                              </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Perfect Full Size Responsive Background Image</span>
+                                                <span class="lang">[CSS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+html { 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+                                          </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Sticky Footer</span>
+                                                <span class="lang">[CSS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+     html{
+     height:100%;
+    }
+     body{
+     min-height:100%;
+     position:relative;
+     padding-bottom:[footer - height];
+            }
+    .footer{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:[footer-height];
+    }
+                                              </code></pre>
+                                        </details>
+                                    </div>
+                                    <div class="snippet">
+                                        <details>
+                                            <summary>
+                                                <span class="name">Make image auto resize to max width of the boundary</span>
+                                                <span class="lang">[CSS]</span>
+                                            </summary>
+                                            <pre><code class="answer">
+        img{
+         max-width:100%;
+         height:auto;
+        }
+    **FOR RELATIVE MARGINS USE EMS OR % NOT PIXELS
+    **FOR RELATIVE PADDING USE %
+    **FOR RELATIVE FONT SIZE USE vw( 1vw = 1% viewport width;
+    ex: 50cm width = .5cm so .5 is 1vw )
+                                                  </code></pre>
+                                        </details>
+                                    </div>
+
+                                    </code>
+                                    </pre>
+                                    <!--HTML-->
+                                    </details>
+                                </div>
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Microformat hCard</span>
+                                            <span class="lang">[HTML]</span>
+                                        </summary>
+                                        <pre><code class="code html answer">
+&lt;div id="hcard-Firstname-Lastname" class="vcard"&gt;
+&lt;a class="url fn n" href="http://website.net"&gt;
+&lt;span class="given-name"&gt;Firstname&lt;/span&gt;
+&lt;span class="additional-name"&gt;Middlename&lt;/span&gt;
+&lt;span class="family-name"&gt;Lastname&lt;/span&gt;
+&lt;/a&gt;
+&lt;div class="org"&gt;Company&lt;/div&gt;
+&lt;a class="email" href="mailto:whoever@gmail.com"&gt;firstname@website.net&lt;/a&gt;
+&lt;div class="adr"&gt;
+&lt;div class="street-address"&gt;123 Streetname&lt;/div&gt;
+&lt;span class="locality"&gt;Cityname&lt;/span&gt;, &lt;span class="region"&gt;Region &lt;/span&gt; &lt;span class="postal-code"&gt;12345&lt;/span&gt;
+&lt;span class="country-name"&gt;Countryname&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="tel"&gt;555-555-5555&lt;/div&gt;
+&lt;/div&gt;
+                                                    </code></pre>
+                                    </details>
+                                </div>
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Table markup</span>
+                                            <span class="lang">[HTML]</span>
+                                        </summary>
+                                        <pre><code class="code html answer">
+    &lt;table&gt;
+    &lt;thead&gt;
+         &lt;tr&gt;
+     &lt;th&gt;&lt;/th&gt;
+    &lt;th&gt;&lt;/th&gt;
+       &lt;/tr&gt;
+    &lt;/thead&gt;
+     &lt;tbody&gt;
+     &lt;tr&gt;
+     &lt;td&gt;&lt;/td&gt;
+     &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;/table&gt;
+                                                        </code></pre>
+                                    </details>
+                                </div>
+
+                                <!--JQUERY-->
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Video click to play/pause</span>
+                                            <span class="lang">[jQuery]</span>
+                                        </summary>
+                                        <pre><code class="code js answer">
+$('video ').on('click ', function(){
+if(!$(this)[0].paused)
+$(this)[0].pause();
+$(this).attr('controls ', false);
+ }else{
+  $(this)[0].play();
+  $(this).attr('controls ', true);
+  }
+});
+                                                    </code></pre>
+                                    </details>
+                                </div>
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Calculate Distance Between Mouse and Element</span>
+                                            <span class="lang">[JQUERY]</span>
+                                        </summary>
+                                        <pre><code class="answer">
+    (function() {
+        var mX, mY, distance,
+    $distance = $('#distance span'),
+    $element  = $('#element');
+                                                        
+    function calculateDistance(elem, mouseX, mouseY) {
+     return Math.floor(Math.sqrt(Math.pow(mouseX - (elem.offset().left+(elem.width()/2)), 2) + Math.pow(mouseY - (elem.offset().top+(elem.height()/2)), 2)));
+     }
+                                                        
+    $(document).mousemove(function(e) {  
+        mX = e.pageX;
+        mY = e.pageY;
+    distance = calculateDistance($element, mX, mY);
+    $distance.text(distance);         
+    });
+                                                        
+    })();
+                                              </code></pre>
+                                    </details>
+                                </div>
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Ajax loading json</span>
+                                            <span class="lang">[jquery]</span>
+                                        </summary>
+                                        <pre><code class="code js answer">
+    var myData = {};
+    $.ajax({
+     'async ': false,
+       'url ': 'data/data.json ',
+       'dataType ': 'json ',
+       'success ': function(data) {
+    myData = data;
+    },
+     'error ': function() {
+     console.log('ERROR: could not load data json ');
+      }
+      });        
+                                                    </code></pre>
+                                    </details>
+                                </div>
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Get JSON from API with jQuery</span>
+                                            <span class="lang">[jQUERY]</span>
+                                        </summary>
+                                        <pre><code class="answer">
+        $(document).ready(function() {
+        $("#getMessage").on("click", function(){
+        $.getJSON("http://forAPI.com/queryParams", 
+        function(json) {
+        $(".message").html(JSON.stringify(json));
+        });
+                                                
+                                          </code></pre>
+                                    </details>
+                                </div>
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Convert JSON to html</span>
+                                            <span class="lang">[jQUERY]</span>
+                                        </summary>
+                                        <pre><code class="answer">
+        var html = "";.
+        json.forEach(function(val) {
+        var keys = Object.keys(val);
+        html += "<div class="whatever">";
+        keys.forEach(function(key) {
+        html += "<strong>" + key + "</strong>: " + val[key] + "<br>";
+        });
+        html += "</div><br>";
+        });
+                                          </code></pre>
+                                    </details>
+                                </div>
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Render Images from Data Sources with jQuery </span>
+                                            <span class="lang">[jQUERY]</span>
+                                        </summary>
+                                        <pre><code class="answer">
+ $(document).ready(function() {
+$("#getMessage").on("click", function() {
+$.getJSON("/json/whatever.json", function(json) {
+var html = "";
+ json.forEach(function(val) {
+ html += "<div class="class-name">";
+ html += "<img 
+ src="&quot; + val.imageLink + &quot;" "="" +="" "
+ alt="&quot; + val.altText + &quot;">;"
+ html += "</div>";
+}); &#8201;&#8201;  &#8201;  
+$(".message").html(html);
+ });
+});
+});
+                                          </code></pre>
+                                    </details>
+                                </div>
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Prefilter Json with jQuery</span>
+                                            <span class="lang">[jQUERY]</span>
+                                        </summary>
+                                        <pre><code class="answer">
+  json = json.filter(function(vsl){
+  return (val.id !==1);
+ });
+                                                  
+                                          </code></pre>
+                                    </details>
+                                </div>
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Get Geolocation with jQuery</span>
+                                            <span class="lang">[jQUERY]</span>
+                                        </summary>
+                                        <pre><code class="answer">
+                                               
+ if(navigator.geolocation) {
+navigator.geolocation.getCurrentPosition(function(position){
+$("#data").html("latitude: " + position.coords.latitude + "
+<br>longitude: " + position.coords.longitude);
+})
+ }
+                                                
+                                          </code></pre>
+                                    </details>
+                                </div>
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Trigger Click Events with jQuery</span>
+                                            <span class="lang">[jQUERY]</span>
+                                        </summary>
+                                        <pre><code class="answer">
+        $(document).ready(function)
+        $("#getMessage").on("click", function(){
+         });
+        });
+                                          </code></pre>
+                                    </details>
+                                </div>
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Change Html Text with jQuery</span>
+                                            <span class="lang">[jQUERY]</span>
+                                        </summary>
+                                        <pre><code class="answer">
+     $(document).ready(function() {
+     $("#getMessage").on("click", function(){
+     $(".message").html("Here is the message");
+     });
+     });
+                                          </code></pre>
+                                    </details>
+                                </div>
+                                <!--SCSS-->
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Scrollbars customizer </span>
+                                            <span class="lang">[SCSS]</span>
+                                        </summary>
+                                        <pre><code class="code scss answer">
+    ::-webkit-scrollbar-button{
+    display: none;
+    }
+    ::-webkit-scrollbar {
+    width:  2px;
+    height: 2px;
+    }
+    ::-webkit-scrollbar-thumb {
+     background: transparent;
+    border: 1px solid rgba(220,220,220,1);
+    cursor: pointer;
+    }
+    ::-webkit-scrollbar-track {
+    background: transparent;
+    width: 4px;
+    border: 2px solid transparent;
+    }
+    ::-webkit-scrollbar-track-piece {
+    background: transparent;
+    width: 4px;
+    border: 2px solid transparent;
+    }
+    body {
+    scrollbar-face-color: white;
+    scrollbar-track-color: transparent;
+    }
+                                                        </code></pre>
+                                    </details>
+                                </div>
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Scrollbars customizer 2</span>
+                                            <span class="lang">[SCSS]</span>
+                                        </summary>
+                                        <pre><code class="code scss answer">
+            @mixin scrollbars($size, $foreground-color, $background-color) {
+            ::-webkit-scrollbar-button{
+            display: none;
+             }
+            ::-webkit-scrollbar {
+            width:  $size;
+            height: $size;
+            }
+            ::-webkit-scrollbar-thumb {
+            background: $foreground-color;
+            border: 1px solid lighten($foreground-color, 10%);
+            cursor: pointer;
+             }
+            ::-webkit-scrollbar-track {
+             background: $background-color;
+            width: calc(#{$size} * 2);
+            border: 2px solid lighten($background-color, 10%);
+            }
+            ::-webkit-scrollbar-track-piece {
+            background: $background-color;
+            width: calc(#{$size} / 2);
+            border: 2px solid lighten($background-color, 10%);
+            }
+             body {
+            scrollbar-face-color: $foreground-color;
+            scrollbar-track-color: $background-color;
+            }
+            }
+                                                        </code></pre>
+
+                                    </details>
+                                </div>
+
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">For loop generating css rules</span>
+                                            <span class="lang">[SCSS]</span>
+                                        </summary>
+                                        <pre><code class="code scss answer">
+                @for $i from 1 through 20 {
+                $increment: 18;
+              &amp;:nth-child( #{$i} ) {
+                $r: $i * $increment;
+                  transform: rotate(#{$r}deg);
+                 }
+                 }
+                                                                </code></pre>
+                                    </details>
+                                </div>
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Center horizontally</span>
+                                            <span class="lang">[SCSS]</span>
+                                        </summary>
+                                        <pre><code class="code scss answer">
+     @mixin hcenter(){
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+                                                        </code></pre>
+                                    </details>
+                                </div>
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Center vertically</span>
+                                            <span class="lang">[SCSS]</span>
+                                        </summary>
+                                        <pre><code class="code scss answer">
+     @mixin vcenter(){
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+    }
+                                                        </code></pre>
+                                    </details>
+                                </div>
+                                <div class="snippet">
+                                    <details>
+                                        <summary>
+                                            <span class="name">Center both horizontally and vertically</span>
+                                            <span class="lang">[SCSS]</span>
+                                        </summary>
+                                        <pre><code class="code scss answer">
+      @mixin hvcenter(){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+                                                        </code></pre>
+                                    </details>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            </div>
+
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </section>
+
+
+
+        <section class="admins ">
+            <div class="container-fluid ">
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <div class="box ">
+
+                        </div>
+                        <div class="info ">
+
+                        </div>
+                    </div>
+                    <div class="admin ">
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </section>
+    <p style="font: normal 8px Arial">Site Search utilizes
+        <br />
+        <a href="http://www.javascriptkit.com">JavaScript Kit</a>
+    </p>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  TEMPLATE FOR SNIPPET   
+                                                <div class="snippet">
+                                                  <details>
+                                                    <summary><span class="name">Code title</span> <span class="lang">[lang]</span></summary>
+                                                    <pre><code class="answer">
+                                                    teh codez
+                                                    </code></pre>
+                                                  </details>
+                                                </div> 
+                                            -->
