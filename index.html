@@ -227,6 +227,32 @@
                                 <div class="list">
                                         <div class="snippet">
                                                 <details>
+                                                  <summary><span class="name">Find Page Count</span> <span class="lang">[lang]</span></summary>
+                                                  <pre><code class="answer">
+                    function pageCount(n, p){
+                        if (p % 2 === 1) {
+                            let total = Math.ceil(p / 2);
+                            return Math.floor(total);
+
+                        } else if ((n -1) === p) {
+                            let total = 0;
+                            return Math.floor(total);
+                    
+                        }
+                        
+                        else {
+                            let total = p / 2;
+                            return Math.floor(total)
+                            
+                    
+                        }
+                    }
+                    pageCount(200,32);//
+                                                  </code></pre>
+                                                </details>
+                                              </div> 
+                                        <div class="snippet">
+                                                <details>
                                                     <summary>
                                                         <span class="name">Remove Dups from Array</span>
                                                         <span class="lang">[JS]</span>
