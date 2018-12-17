@@ -435,6 +435,18 @@ letters[0] = letters[0].toUpperCase();
         const validateIp =
         (ipAddress) => /^(?!0)(?!.*\.$)((1?\d?\d|25[0-5]|2[0-4]\d)(\.|$)){4}$/.test(ipAddress);  
         EXPLAINED:
+        ^ start of string
+  (?!0)         Assume IP cannot start with 0
+  (?!.*\.$)     Make sure string does not end with a dot
+  (
+    (
+    1?\d?\d|   A single digit, two digits, or 100-199
+    25[0-5]|   The numbers 250-255
+    2[0-4]\d   The numbers 200-249
+    )
+  \.|$ the number must be followed by either a dot or end-of-string - to match the last number
+  ){4}         Expect exactly four of these
+$ end of string
                                                                                             
                                                                                               </code></pre>
                                         </details>
