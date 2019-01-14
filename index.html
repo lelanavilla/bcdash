@@ -18,8 +18,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <link rel="stylesheet" href="main.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="code.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="lib/codemirror.css">
+    <script src="lib/codemirror.js"></script>
+    <script src="mode/javascript/javascript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scss.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.js"></script>
@@ -220,6 +223,15 @@
         <section class="statistics ">
             <div class="container-fluid ">
                 <div class="row ">
+                    <div class="code-editor-wrapper">
+                        <h3>_______Editor_______________________________________</h3>
+                        <div class="code-editor" id="code-editor">
+                            <textarea id="myTextArea" class="myTextArea">
+                                
+                            </textarea>
+
+                        </div>
+                    </div>
                     <div class="col-md-12 ">
                         <div class="box ">
                             <div class="info ">
@@ -591,12 +603,12 @@ $ end of string
                                     <div class="snippet">
                                         <details>
                                             <summary>
-                                                <span class="name">Increment a number</span>
+                                                <span class="name">Find index of an element in an array</span>
                                                 <span class="lang">[JS]</span>
                                             </summary>
                                             <pre><code class="answer">
-                    var myVar = 87; 
-                    myVar++;
+                                 function findNeedle(haystack) {
+                                return haystack.indexOf("needle");
                                                                                               </code></pre>
                                         </details>
                                     </div>
@@ -1321,6 +1333,7 @@ document.body.contentEditable= true;
         <br />
         <a href="http://www.javascriptkit.com">JavaScript Kit</a>
     </p>
+    <script src="code.js"></script>
 </body>
 
 </html>
